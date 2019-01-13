@@ -1,0 +1,166 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* muk_dms_attachment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-26 12:31+0000\n"
+"PO-Revision-Date: 2019-01-12 01:27+0800\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.2\n"
+"Last-Translator: \n"
+"Language: zh_CN\n"
+
+#. module: muk_dms_attachment
+#: code:addons/muk_dms_attachment/models/ir_attachment.py:138
+#, python-format
+msgid "A directory has to be defined."
+msgstr "必须定义目录。"
+
+#. module: muk_dms_attachment
+#: model:ir.model.fields,help:muk_dms_attachment.field_res_config_settings_attachment_directory
+#: model:ir.ui.view,arch_db:muk_dms_attachment.res_config_settings_view_form
+msgid ""
+"After a attachment is created, it will be automatically saved to the default "
+"directory."
+msgstr "创建附件后，它将自动保存到默认目录。"
+
+#. module: muk_dms_attachment
+#: model:ir.actions.act_window,help:muk_dms_attachment.action_dms_attachment
+msgid ""
+"Also you will find here all the related documents and download it by "
+"clicking on any individual document."
+msgstr "您还可以在此处找到所有相关文档，并通过单击任何单个文档进行下载。"
+
+#. module: muk_dms_attachment
+#: model:ir.ui.view,arch_db:muk_dms_attachment.view_attachment_search
+msgid "Attached Document Field"
+msgstr "附加文件字段"
+
+#. module: muk_dms_attachment
+#: model:ir.ui.view,arch_db:muk_dms_attachment.view_attachment_search
+msgid "Attached Document Model"
+msgstr "附件文件模型"
+
+#. module: muk_dms_attachment
+#: model:ir.actions.act_window,name:muk_dms_attachment.action_dms_attachment
+#: model:ir.model.fields,field_description:muk_dms_attachment.field_muk_dms_file_attachment
+#: model:ir.ui.view,arch_db:muk_dms_attachment.res_config_settings_view_form
+msgid "Attachment"
+msgstr "附件"
+
+#. module: muk_dms_attachment
+#: model:ir.model.fields,help:muk_dms_attachment.field_res_config_settings_attachment_location
+#: model:ir.ui.view,arch_db:muk_dms_attachment.res_config_settings_view_form
+msgid "Attachment storage location."
+msgstr "附件存储位置。"
+
+#. module: muk_dms_attachment
+#: model:ir.ui.menu,name:muk_dms_attachment.menu_dms_attachment
+#: model:ir.ui.view,arch_db:muk_dms_attachment.view_attachment_search
+msgid "Attachments"
+msgstr "附件"
+
+#. module: muk_dms_attachment
+#: model:ir.actions.act_window,help:muk_dms_attachment.action_dms_attachment
+msgid "Click here to create new documents."
+msgstr "单击此处以创建新文档。"
+
+#. module: muk_dms_attachment
+#: selection:res.config.settings,attachment_location:0
+msgid "Database"
+msgstr "数据库"
+
+#. module: muk_dms_attachment
+#: model:ir.model.fields,field_description:muk_dms_attachment.field_res_config_settings_attachment_directory
+msgid "Default Directory"
+msgstr "缺省目录"
+
+#. module: muk_dms_attachment
+#: model:ir.model.fields,field_description:muk_dms_attachment.field_ir_attachment_store_document
+msgid "Document File"
+msgstr "文档文件"
+
+#. module: muk_dms_attachment
+#: model:ir.ui.view,arch_db:muk_dms_attachment.view_attachment_search
+msgid "Field Data"
+msgstr "字段"
+
+#. module: muk_dms_attachment
+#: model:ir.model,name:muk_dms_attachment.model_muk_dms_file
+msgid "File"
+msgstr "文件"
+
+#. module: muk_dms_attachment
+#: selection:res.config.settings,attachment_location:0
+msgid "File Storage"
+msgstr "文件存储"
+
+#. module: muk_dms_attachment
+#: model:ir.ui.view,arch_db:muk_dms_attachment.res_config_settings_view_form
+msgid "Force Storage Migration"
+msgstr "强制存储迁移"
+
+#. module: muk_dms_attachment
+#: model:ir.actions.server,name:muk_dms_attachment.action_dms_attachment_migrate
+msgid "Migrate Storage Location"
+msgstr "迁移存储位置"
+
+#. module: muk_dms_attachment
+#: selection:res.config.settings,attachment_location:0
+msgid "MuK Documents"
+msgstr "文档"
+
+#. module: muk_dms_attachment
+#: code:addons/muk_dms_attachment/models/dms_file.py:81
+#, python-format
+msgid "Multiple Attachments link to the same file!"
+msgstr "多个附件链接到同一个文件！"
+
+#. module: muk_dms_attachment
+#: code:addons/muk_dms_attachment/models/ir_attachment.py:70
+#, python-format
+msgid "Only administrators can execute this action."
+msgstr "只有管理员能够执行此操作。"
+
+#. module: muk_dms_attachment
+#: model:ir.model.fields,help:muk_dms_attachment.field_muk_dms_file_attachment
+msgid "Reference to the attachment, if the file was created from one."
+msgstr "如果文件是从一个文件创建的，则引用该附件。"
+
+#. module: muk_dms_attachment
+#: model:ir.ui.view,arch_db:muk_dms_attachment.view_attachment_form
+msgid "Storage"
+msgstr "存储"
+
+#. module: muk_dms_attachment
+#: model:ir.model.fields,field_description:muk_dms_attachment.field_res_config_settings_attachment_location
+msgid "Storage Location"
+msgstr "存储位置"
+
+#. module: muk_dms_attachment
+#: model:ir.model.fields,field_description:muk_dms_attachment.field_ir_attachment_storage_type
+msgid "Storage Type"
+msgstr "保存类型"
+
+#. module: muk_dms_attachment
+#: code:addons/muk_dms_attachment/models/dms_file.py:67
+#, python-format
+msgid "This operation is forbidden!"
+msgstr "禁止此操作！"
+
+#. module: muk_dms_attachment
+#: model:ir.model,name:muk_dms_attachment.model_ir_attachment
+msgid "ir.attachment"
+msgstr ""
+
+#. module: muk_dms_attachment
+#: model:ir.model,name:muk_dms_attachment.model_res_config_settings
+msgid "res.config.settings"
+msgstr ""

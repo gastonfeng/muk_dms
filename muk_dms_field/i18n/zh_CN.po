@@ -1,0 +1,65 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* muk_dms_field
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-02 20:59+0000\n"
+"PO-Revision-Date: 2019-01-12 01:30+0800\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.2\n"
+"Last-Translator: \n"
+"Language: zh_CN\n"
+
+#. module: muk_dms_field
+#: model:ir.model,name:muk_dms_field.model_ir_model_fields
+msgid "Fields"
+msgstr "字段"
+
+#. module: muk_dms_field
+#: model:ir.model,name:muk_dms_field.model_muk_dms_file
+msgid "File"
+msgstr "文件"
+
+#. module: muk_dms_field
+#. openerp-web
+#: code:addons/muk_dms_field/static/src/xml/dms_widgets.xml:25
+#, python-format
+msgid "Preview this file"
+msgstr "预览文件"
+
+#. module: muk_dms_field
+#: model:ir.model.fields,field_description:muk_dms_field.field_muk_dms_file_reference_field
+msgid "Reference Field"
+msgstr "引用字段"
+
+#. module: muk_dms_field
+#: model:ir.model.fields,field_description:muk_dms_field.field_muk_dms_file_reference_id
+msgid "Reference ID"
+msgstr "引用ID"
+
+#. module: muk_dms_field
+#: model:ir.model.fields,field_description:muk_dms_field.field_muk_dms_file_reference_model
+msgid "Reference Model"
+msgstr "引用模型"
+
+#. module: muk_dms_field
+#: model:ir.model.fields,field_description:muk_dms_field.field_muk_dms_file_reference_name
+msgid "Reference Name"
+msgstr "引用名称"
+
+#. module: muk_dms_field
+#: model:ir.model.fields,help:muk_dms_field.field_muk_dms_file_reference_model
+msgid "The database object this record will be attached to."
+msgstr "此记录将附加到的数据库对象。"
+
+#. module: muk_dms_field
+#: model:ir.model.fields,help:muk_dms_field.field_muk_dms_file_reference_id
+msgid "The record id this is attached to."
+msgstr "附加的记录ID。"
