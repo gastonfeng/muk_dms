@@ -17,12 +17,9 @@
 #
 ###################################################################################
 
-import re
 import logging
 
-from odoo import _
-from odoo import models, api, fields
-from odoo.tools import pg_varchar, ustr, human_size
+from odoo import fields
 
 _logger = logging.getLogger(__name__)
 

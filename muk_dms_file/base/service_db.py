@@ -17,21 +17,20 @@
 #
 ###################################################################################
 
-import os
 import json
-import uuid
 import logging
+import os
 import shutil
-import zipfile
 import tempfile
-
+import uuid
+import zipfile
 from contextlib import closing
 
-from odoo import _, modules, api, sql_db, SUPERUSER_ID
-from odoo.tools import osutil, config, exec_pg_command
-from odoo.service import db
-
 from odoo.addons.muk_utils.tools import patch
+
+from odoo import api, sql_db, SUPERUSER_ID
+from odoo.service import db
+from odoo.tools import osutil
 
 _logger = logging.getLogger(__name__)
 

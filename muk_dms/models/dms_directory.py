@@ -17,10 +17,10 @@
 #
 ###################################################################################
 
-import os
-import json
 import base64
+import json
 import logging
+import os
 
 from odoo import models, api, fields, tools
 from odoo.exceptions import ValidationError

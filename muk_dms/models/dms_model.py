@@ -17,15 +17,14 @@
 #
 ###################################################################################
 
+import logging
 import os
 import shutil
-import logging
 import tempfile
 
-from odoo import models, api
-
-from odoo.addons.muk_utils.tools import helper
 from odoo.addons.muk_utils.tools import utils_os
+
+from odoo import models, api
 
 _logger = logging.getLogger(__name__)
 

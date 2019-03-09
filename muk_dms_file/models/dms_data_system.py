@@ -17,19 +17,18 @@
 #
 ###################################################################################
 
-import os
-import errno
-import shutil
 import base64
+import errno
 import hashlib
 import logging
-
+import os
+import shutil
 from contextlib import contextmanager
 
 from odoo import _
 from odoo import models, api, fields
-from odoo.tools import config, human_size, ustr, html_escape
 from odoo.exceptions import ValidationError, AccessError, MissingError
+from odoo.tools import human_size
 
 _logger = logging.getLogger(__name__)
 

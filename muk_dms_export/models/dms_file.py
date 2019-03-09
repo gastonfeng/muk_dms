@@ -19,9 +19,9 @@
 
 import logging
 
-from odoo import models, api, fields
-
 from odoo.addons.muk_converter.tools import converter
+
+from odoo import models, api, fields
 
 _logger = logging.getLogger(__name__)
 

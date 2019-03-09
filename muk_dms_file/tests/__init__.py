@@ -17,5 +17,5 @@
 #
 ###################################################################################
 
-from . import test_dms_settings
 from . import test_dms_data
+from . import test_dms_settings

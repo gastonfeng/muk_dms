@@ -18,6 +18,6 @@
 ###################################################################################
 
 from . import dms_case
-from . import test_dms_settings
 from . import test_dms_directory
 from . import test_dms_file
+from . import test_dms_settings

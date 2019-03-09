@@ -17,13 +17,9 @@
 #
 ###################################################################################
 
-import os
-import base64
 import logging
+import os
 import unittest
-
-from odoo import _
-from odoo.tests import common
 
 from odoo.addons.muk_dms.tests import dms_case
 

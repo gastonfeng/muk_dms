@@ -17,9 +17,9 @@
 #
 ###################################################################################
 
-import os
 import errno
 import logging
+import os
 
 from odoo import _
 from odoo import models, api, fields

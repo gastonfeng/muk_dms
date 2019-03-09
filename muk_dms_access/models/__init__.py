@@ -18,6 +18,6 @@
 ###################################################################################
 
 from . import dms_access
-from . import dms_file
 from . import dms_directory
+from . import dms_file
 from . import security_groups

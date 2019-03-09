@@ -17,10 +17,10 @@
 #
 ###################################################################################
 
-from odoo import fields
-
 from odoo.addons.muk_dms_field.fields.dms_binary import DocumentBinary
 from odoo.addons.muk_dms_field.fields.dms_many2one import DocumentMany2one
+
+from odoo import fields
 
 fields.DocumentBinary = DocumentBinary
 fields.DocumentMany2one = DocumentMany2one

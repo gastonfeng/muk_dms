@@ -20,18 +20,10 @@
 ###################################################################################
 
 import base64
-import hashlib
-import itertools
 import logging
-import mimetypes
-import os
-import re
-from collections import defaultdict
 
-from odoo import api, fields, models, tools, SUPERUSER_ID, _
+from odoo import api, fields, models, _
 from odoo.exceptions import AccessError, ValidationError
-from odoo.tools import config, human_size, ustr, html_escape
-from odoo.tools.mimetypes import guess_mimetype
 
 _logger = logging.getLogger(__name__)
 

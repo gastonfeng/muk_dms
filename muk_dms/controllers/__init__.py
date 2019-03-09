@@ -17,5 +17,5 @@
 #
 ###################################################################################
 
-from . import main
 from . import backend
+from . import main
