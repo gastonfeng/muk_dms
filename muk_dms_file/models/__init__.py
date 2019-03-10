@@ -17,7 +17,7 @@
 #
 ###################################################################################
 
-from . import dms_data_system
-from . import dms_file
 from . import dms_settings
+from . import dms_file
+from . import dms_data_system
 from . import res_config_settings

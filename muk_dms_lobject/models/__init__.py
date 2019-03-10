@@ -17,6 +17,6 @@
 #
 ###################################################################################
 
-from . import dms_data_lobject
-from . import dms_file
 from . import dms_settings
+from . import dms_file
+from . import dms_data_lobject
