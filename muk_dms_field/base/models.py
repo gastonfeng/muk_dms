@@ -19,9 +19,9 @@
 
 import logging
 
-from odoo import models, api
-
 from odoo.addons.muk_utils.tools import patch
+
+from odoo import models, api
 
 _logger = logging.getLogger(__name__)
 

@@ -17,10 +17,10 @@
 #
 ###################################################################################
 
-import os
-import logging
-import unittest
 import collections
+import logging
+import os
+import unittest
 
 from odoo.addons.muk_dms.tests import dms_case
 

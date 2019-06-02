@@ -22,8 +22,7 @@ import logging
 import mimetypes
 
 from odoo import models
-from odoo.exceptions import AccessError
-from odoo.http import request, STATIC_CACHE
+from odoo.http import request
 from odoo.tools.mimetypes import guess_mimetype
 
 _logger = logging.getLogger(__name__)

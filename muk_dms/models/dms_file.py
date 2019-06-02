@@ -17,17 +17,17 @@
 #
 ###################################################################################
 
-import os
-import json
 import base64
+import itertools
+import json
 import logging
 import mimetypes
-import itertools
+import os
 
 from odoo import _
 from odoo import models, api, fields, tools
-from odoo.tools.mimetypes import guess_mimetype
 from odoo.exceptions import ValidationError
+from odoo.tools.mimetypes import guess_mimetype
 
 _logger = logging.getLogger(__name__)
 

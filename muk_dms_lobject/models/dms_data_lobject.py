@@ -17,19 +17,11 @@
 #
 ###################################################################################
 
-import os
-import errno
-import shutil
-import base64
-import hashlib
 import logging
 
-from odoo import _
-from odoo import models, api, fields
-from odoo.tools import config, human_size, ustr, html_escape
-from odoo.exceptions import ValidationError, AccessError, MissingError
-
 from odoo.addons.muk_fields_lobject.fields.lobject import LargeObject
+
+from odoo import models, api
 
 _logger = logging.getLogger(__name__)
 

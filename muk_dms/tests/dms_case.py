@@ -17,9 +17,9 @@
 #
 ###################################################################################
 
-import os
 import base64
 import logging
+import os
 
 from odoo import SUPERUSER_ID
 from odoo.tests import common

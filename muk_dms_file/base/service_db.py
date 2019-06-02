@@ -17,21 +17,20 @@
 #
 ###################################################################################
 
-import os
 import json
-import uuid
 import logging
+import os
 import shutil
-import zipfile
 import tempfile
-
+import uuid
+import zipfile
 from contextlib import closing
 
-from odoo import _, modules, api, sql_db, SUPERUSER_ID
-from odoo.tools import osutil, config, exec_pg_command
-from odoo.service import db
-
 from odoo.addons.muk_utils.tools import patch
+
+from odoo import api, sql_db, SUPERUSER_ID
+from odoo.service import db
+from odoo.tools import osutil
 
 _logger = logging.getLogger(__name__)
 
@@ -42,13 +41,12 @@ def exp_duplicate_database(db_original_name, db_name):
     connection = sql_db.db_connect(db_original_name)
     with closing(connection.cursor()) as cr:
         env = api.Environment(cr, SUPERUSER_ID, {})
-        if env.get('muk_dms.settings'):
-            settings = env['muk_dms.settings'].search([('save_type', '=', 'file')])
-            for setting in settings:
-                filestore_paths.append({
-                    'complete_base_path': setting.complete_base_path,
-                    'base_path': setting.base_path,
-                    'db_name': db_name})
+        settings = env['muk_dms.settings'].search([('save_type', '=', 'file')])
+        for setting in settings:
+            filestore_paths.append({
+                'complete_base_path': setting.complete_base_path,
+                'base_path': setting.base_path,
+                'db_name': db_name})
     res = exp_duplicate_database.super(db_original_name, db_name)
     for path in filestore_paths:
         if os.path.exists(path['complete_base_path']):
@@ -62,9 +60,8 @@ def exp_drop(db_name):
     connection = sql_db.db_connect(db_name)
     with closing(connection.cursor()) as cr:
         env = api.Environment(cr, SUPERUSER_ID, {})
-        if env.get('muk_dms.settings'):
-            settings = env['muk_dms.settings'].search([('save_type', '=', 'file')])
-            filestore_paths = settings.mapped('complete_base_path')
+        settings = env['muk_dms.settings'].search([('save_type', '=', 'file')])
+        filestore_paths = settings.mapped('complete_base_path')
     res = exp_drop.super(db_name)
     for path in filestore_paths:
         if os.path.exists(path):
@@ -79,13 +76,12 @@ def dump_db(db_name, stream, backup_format='zip'):
         connection = sql_db.db_connect(db_name)
         with closing(connection.cursor()) as cr:
             env = api.Environment(cr, SUPERUSER_ID, {})
-            if env.get('muk_dms.settings'):
-                settings = env['muk_dms.settings'].search([('save_type', '=', 'file')])
-                for setting in settings:
-                    filestore_paths.append({
-                        'complete_base_path': setting.complete_base_path,
-                        'base_path': setting.base_path,
-                        'db_name': db_name})
+            settings = env['muk_dms.settings'].search([('save_type', '=', 'file')])
+            for setting in settings:
+                filestore_paths.append({
+                    'complete_base_path': setting.complete_base_path,
+                    'base_path': setting.base_path,
+                    'db_name': db_name})
         res = dump_db.super(db_name, False, backup_format)
         with osutil.tempdir() as dump_dir:
             with zipfile.ZipFile(res, 'r') as zip:
@@ -136,13 +132,12 @@ def exp_rename(old_name, new_name):
     connection = sql_db.db_connect(old_name)
     with closing(connection.cursor()) as cr:
         env = api.Environment(cr, SUPERUSER_ID, {})
-        if env.get('muk_dms.settings'):
-            settings = env['muk_dms.settings'].search([('save_type', '=', 'file')])
-            for setting in settings:
-                filestore_paths.append({
-                    'complete_base_path': setting.complete_base_path,
-                    'base_path': setting.base_path,
-                    'db_name': db_name})
+        settings = env['muk_dms.settings'].search([('save_type', '=', 'file')])
+        for setting in settings:
+            filestore_paths.append({
+                'complete_base_path': setting.complete_base_path,
+                'base_path': setting.base_path,
+                'db_name': db_name})
     res = exp_rename.super(old_name, new_name)
     for path in filestore_paths:
         if os.path.exists(path['complete_base_path']):

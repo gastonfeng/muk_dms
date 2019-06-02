@@ -17,20 +17,13 @@
 #
 ###################################################################################
 
-import os
-import re
-import json
-import urllib
 import base64
 import logging
-import mimetypes
 
-from odoo import _
-from odoo import models, api, fields
-from odoo.exceptions import ValidationError, AccessError
-
-from odoo.addons.muk_utils.tools import utils_os
 from odoo.addons.muk_thumbnails.tools import thumbnail
+from odoo.addons.muk_utils.tools import utils_os
+
+from odoo import models, api, fields
 
 _logger = logging.getLogger(__name__)
 

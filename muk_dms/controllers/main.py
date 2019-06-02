@@ -24,8 +24,8 @@ import werkzeug.utils
 import werkzeug.wrappers
 
 from odoo import http
-from odoo.http import request
 from odoo.exceptions import AccessError
+from odoo.http import request
 
 _logger = logging.getLogger(__name__)
 

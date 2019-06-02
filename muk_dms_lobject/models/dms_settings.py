@@ -17,12 +17,9 @@
 #
 ###################################################################################
 
-import os
 import logging
 
-from odoo import _
-from odoo import models, api, fields
-from odoo.exceptions import ValidationError
+from odoo import models, fields
 
 _logger = logging.getLogger(__name__)
 

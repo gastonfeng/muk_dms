@@ -22,7 +22,7 @@
 from ast import literal_eval
 
 from odoo import api, fields, models
-from odoo.exceptions import AccessDenied
+
 
 class DocumentAttachmentSettings(models.TransientModel):
     

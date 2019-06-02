@@ -17,8 +17,8 @@
 #
 ###################################################################################
 
-import os
 import logging
+import os
 
 from odoo.addons.muk_dms.tests import dms_case
 
